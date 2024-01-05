@@ -24,6 +24,10 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 Constraints:
 
 -231 <= x <= 231 - 1
+
+
+sol:
+
  class Solution {
     public boolean isPalindrome(int x) {
         int temp=x;
@@ -57,5 +61,5 @@ Constraints:
 Follow up: Could you solve it without converting the integer to a string?
 
 
-sol:
+
 
