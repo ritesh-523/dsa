@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 6px;
+}
+body {
+    font-family: 'Saira', sans-serif;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.coloumn2{
+    
+    padding: 30px;
+    background-color: rgb(39, 37, 37);
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+/* .img{
+    border-radius: 50%;
+} */
