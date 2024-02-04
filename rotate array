@@ -32,3 +32,59 @@ Follow up:
 
 Try to come up with as many solutions as you can. There are at least three different ways to solve this problem.
 Could you do it in-place with O(1) extra space?
+
+
+sol:
+class Solution {
+    public void rotate(int[] arr, int k) {
+        // // int n=nums.length;
+        // // int arr[]=new int[n];
+        // // int k=0;
+        // // for(int i=a+1;i<n;i++)
+        // // {
+        // //     arr[k]=nums[i];
+        // //     k++;
+
+        // // }
+        
+        // //  for(int i=0;i<=a;i++)
+        // // {
+        // //     arr[k]=nums[i];
+        // //     k++;
+
+        // // }
+        // // for(int i=0;i<n;i++)
+        // // {
+        // //     nums[i]=arr[i];
+        // // }
+        // int n=nums.length;
+
+        // rev(nums,0,n-a-1);
+        // rev(nums,a,n-1);
+        // rev(nums,0,n-1);
+    
+
+    int n=arr.length;
+    k=k%n;
+    // Reverse first k elements
+    Reverse(arr, 0, n-k - 1);
+    // Reverse last n-k elements
+    Reverse(arr, n-k , n - 1);
+    // Reverse whole array
+    Reverse(arr, 0, n - 1);
+
+
+
+
+    }
+
+     public static void Reverse(int[] arr, int start, int end) {
+    while (start <= end) {
+      int temp = arr[start];
+      arr[start] = arr[end];
+      arr[end] = temp;
+      start++;
+      end--;
+    }
+    }
+}
